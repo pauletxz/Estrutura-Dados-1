@@ -1,0 +1,33 @@
+2) Considere o trecho de código abaixo: 
+
+    int main(void) {
+        int x, *p;
+        x = 100;
+        p = x;
+        printf(?Valor de p = %p\tValor de *p = %d?, p, *p);
+}
+
+------------------------------------------------------------
+Resposta:
+
+A) É exibido um aviso:
+
+B) A variável 'p' é um ponteiro do tipo inteiro e deve armazenar o endereço de uma variável do tipo inteiro, não o seu valor. Quando um ponteiro é inicializado com o conteúdo de uma variável em vez de seu endereço, ele não sabe para onde está apontando. Isso pode resultar em comportamento imprevisível ao acessar ou modificar dados.
+
+C) Antes de executar o programa, é possível observar avisos emitidos pelo compilador. A execução do código não ocorre conforme esperado.
+
+D) Observe o código na apartir da linha 23.
+
+E) Sim, a execução ocorreu corretamente e exibiu o endereço da variável 'x' e seu valor, que é 100.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+
+    int x, *p;
+    x = 100;
+    p = &x;
+    printf("Valor de p = %p\tValor de *p = %d ", p, *p); 
+
+}
