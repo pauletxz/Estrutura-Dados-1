@@ -43,7 +43,7 @@ int main() {
 
     printf("Bem-vindo ao Programa de Gerenciamento de Turmas!\n");
     printf("Este programa gerencia as turmas ofertadas, fornecendo as funcionalidades de matricula, lancamento de notas e listagem de alunos.\n");
-    printf("Autor: Paulo Henrique Versao: Desconhecida\n");
+    printf("Autor: Ada Lovelace Versao: 1.0\n");
 
     do {
         exibirMenu();
