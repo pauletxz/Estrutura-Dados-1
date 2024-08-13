@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "aluno.c"
+#include "aluno.h"
 
 main(void){
     Aluno *aluno = criarAluno(123, "Maria", 8.5);
