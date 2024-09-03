@@ -46,7 +46,7 @@ void exibirEstoque (){
     arquivo = open_file("estoque.bin", "rb");
 
     while(fread(&produto, sizeof(Produto), 1, arquivo) == 1){
-        printf("%d\n%s\n%d\n", produto.codigo, produto.descricao, produto.estoque);
+        printf("%d\t%s\t%d\t", produto.codigo, produto.descricao, produto.estoque);
     }
 
     fclose(arquivo);
