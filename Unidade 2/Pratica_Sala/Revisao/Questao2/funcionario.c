@@ -49,7 +49,4 @@ void buscarFuncionario(Funcionario * funcionario){
 
     printf("Digite o id do funcionario que deseja buscar");
     scanf("%d", &funcionario->id);
-
-    
-
 }
